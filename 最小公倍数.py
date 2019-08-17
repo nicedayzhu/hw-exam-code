@@ -9,12 +9,14 @@
 # @Describe: 最小公倍数 = 两数之积除以最大公约数
 
 def gcd(a, b):
+    # 求最大公约数
     """Return greatest common divisor using Euclid's Algorithm."""
     while b:
         a, b = b, a % b
     return a
 
 def lcm(a, b):
+    # 求最小公倍数
     """Return lowest common multiple."""
     return a * b // gcd(a, b)
 
