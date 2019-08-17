@@ -1,0 +1,8 @@
+输出输入字符串表达式的值eval
+print(eval(input()))
+
+列表倒序排列 list.reverse()
+
+向下取整 5 // 2 = 2
+
+统计字符串中1的个数 str.count("1")

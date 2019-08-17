@@ -1,0 +1,21 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# @Time    : 2019/7/17 10:01
+# @Author  : SeniorZhu1994
+# @Email   : SeniorZhu1994@foxmail.com
+# @Site    : 
+# @File    : 排序-冒泡.py
+# @Software: PyCharm
+# @Describe: 
+
+# 冒泡，外循环 n-1 次，内循环 n-i-1 次
+def bubbleSort(arr):
+    for i in range(0, len(arr)-1): # 外循环比较 n-1 轮
+        for j in range(0, len(arr)-i-1): # 内循环比较 n-i-1 次
+            if arr[j] > arr[j+1]:
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+    return arr
+
+if __name__ == '__main__':
+    ls = [3,1,7,4,25,8,12,6]
+    print(bubbleSort(ls))
