@@ -6,3 +6,5 @@ print(eval(input()))
 向下取整 5 // 2 = 2
 
 统计字符串中1的个数 str.count("1")
+
+if lsa_cut[i] in lsb_cut: # 这个语句的意思是，如果 a能够在 b中找到，则返回True，否则返回False
