@@ -6,7 +6,7 @@
 # @Site    : 
 # @File    : 2019-8-28-华为第三题.py
 # @Software: PyCharm
-# @Describe: 
+# @Describe: 需要用到动态规划
 
 def cut(s):
     results = []
