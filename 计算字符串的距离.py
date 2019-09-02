@@ -1,24 +1,14 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time    : 2019/8/31 17:44
+# @Time    : 2019/9/2 15:51
 # @Author  : SeniorZhu1994
 # @Email   : SeniorZhu1994@
 # @Site    : 
-# @File    : 计算字符串的相似度.py
+# @File    : 计算字符串的距离.py
 # @Software: PyCharm
 # @Describe: 
 
-# 链接：https: // www.nowcoder.com / questionTerminal / f549ee08ddd84b8485a4fa9aefaf4a38
-# 来源：牛客网
-
-
 def editDistance(str1, str2):
-    '''
-    计算字符串的距离
-    :param str1:
-    :param str2:
-    :return:
-    '''
     len1, len2 = len(str1) + 1, len(str2) + 1
     dp = [[0 for i in range(len2)] for j in range(len1)]
     for i in range(len1):
@@ -33,6 +23,6 @@ def editDistance(str1, str2):
 
 while True:
     try:
-        print("1/" + str(editDistance(input(), input()) + 1))
+        print(editDistance(input(), input()))
     except:
         break
