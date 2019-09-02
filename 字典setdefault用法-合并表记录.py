@@ -34,12 +34,12 @@ def solution():
     dicin = {}
     for i in range(n):
         k, v = map(int, input().split())
-        if k in dicin.keys():
+        if k in dicin.keys(): # 如果key已经存在于dicin的键中，那么把value相加
             dicin[k] = dicin[k] + v
         else:
             dicin[k] = v
     # print(dicin)
-    for i in sorted(dicin.keys()):
+    for i in sorted(dicin.keys()): # 对 key 进行排序，升序
         print(str(i) + " " + str(dicin[i]))
     # print(dicin.keys())
 
