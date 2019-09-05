@@ -17,6 +17,7 @@
 
 # https://www.runoob.com/python3/python3-func-filter.html
 # https://www.runoob.com/python/python-func-filter.html
+# http://dmcoders.com/2017/07/16/python-lamba/
 
 while True:
     try:
