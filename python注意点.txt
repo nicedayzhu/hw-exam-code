@@ -8,3 +8,55 @@ print(eval(input()))
 统计字符串中1的个数 str.count("1")
 
 if lsa_cut[i] in lsb_cut: # 这个语句的意思是，如果 a能够在 b中找到，则返回True，否则返回False
+
+str1.sort(key=str.upper) # 按照大写字符规则排序，返回值为原来的字符
+
+--------------------------------------------------
+Python 字典(Dictionary) setdefault()方法
+描述
+Python 字典 setdefault() 函数和 get()方法 类似, 如果键不存在于字典中，将会添加键并将值设为默认值。
+
+语法
+setdefault() 方法语法：
+
+dict.setdefault(key, default=None)
+参数
+key -- 查找的键值。
+default -- 键不存在时，设置的默认键值。
+返回值
+如果字典中包含有给定键，则返回该键对应的值，否则返回为该键设置的值。
+
+实例
+以下实例展示了 setdefault() 函数的使用方法：
+
+实例(Python 2.0+)
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+
+dict = {'runoob': '菜鸟教程', 'google': 'Google 搜索'}
+
+print "Value : %s" %  dict.setdefault('runoob', None)
+print "Value : %s" %  dict.setdefault('Taobao', '淘宝')
+以上实例输出结果为：
+
+Value : 菜鸟教程
+Value : 淘宝
+-------------------------------------------------
+Python3 filter() 函数
+
+str1=list(filter(lambda x:x.isalpha(),list(s))) # 将列表中的字母字符都过滤出来生成str1列表
+
+描述
+filter() 函数用于过滤序列，过滤掉不符合条件的元素，返回一个迭代器对象，如果要转换为列表，可以使用 list() 来转换。
+
+该接收两个参数，第一个为函数，第二个为序列，序列的每个元素作为参数传递给函数进行判，然后返回 True 或 False，最后将返回 True 的元素放到新列表中。
+
+语法
+以下是 filter() 方法的语法:
+
+filter(function, iterable)
+参数
+function -- 判断函数。
+iterable -- 可迭代对象。
+返回值
+返回一个迭代器对象
